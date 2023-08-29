@@ -1,0 +1,1177 @@
+{
+  "typeColor": -2555687,
+  "name": "BAT",
+  "Description": "Battery",
+  "parameters": {
+    "BAT_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10121"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Set_Iverter_State",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10115"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "name": "Max Chrg I",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_Chrg_I",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10080"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Min_Reserve_Prect",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10102"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Vendor_event_BitField_2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10074"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Max_Chrg_Rt",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10128"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "SOH_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10081"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "timeOnDelaySeconds": 5.0,
+          "name": "SOC"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "historyProvider": "HistorianDB",
+      "dataType": "Float8",
+      "historyMaxAgeUnits": "SEC",
+      "name": "SOC",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10132"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "AMax_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10123"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "WHRtg_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10129"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "V_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10124"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "WChaDisChaMax_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10090"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Alrm_Rst",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10070"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Base_Mod",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10108"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_Cell_Volt_String",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10113"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "timeOnDelaySeconds": 5.0,
+          "name": "Avrg Cell Volt"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Avrg_Cell_Volt",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10130"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "CellV_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10088"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_HrtBt",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10073"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Energy_Cap",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10125"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "DisChaRte_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "name": "Alarms",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "reference",
+          "dataType": "Boolean",
+          "sourceTagPath": "[.]../Max_Cell_Volt/Alarms.HasActive",
+          "name": "Cell_Over_Volt_Alarm",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "reference",
+          "dataType": "Boolean",
+          "sourceTagPath": "[.]../Ext_Batt_Volt/Alarms/OverVoltage.IsActive",
+          "name": "Battery_Over_Volt_Alarm",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "reference",
+          "dataType": "Boolean",
+          "sourceTagPath": "[.]../Min_Cell_Volt/Alarms.HasActive",
+          "name": "Cell_Under_Volt_Alarm",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "reference",
+          "dataType": "Boolean",
+          "sourceTagPath": "[.]../Ext_Batt_Volt/Alarms/UnderVoltage.IsActive",
+          "name": "Battery_Under_Volt_Alarm",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10127"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "DOD_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10133"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "W_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10082"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "DOD",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10075"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Mx_DisChrg_Rt",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10087"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Ctrl_Mode",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10117"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Tot_Pwr",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10091"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Type",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10104"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "BelowValue",
+          "setpointA": 622.0,
+          "name": "UnderVoltage",
+          "ackMode": "Auto"
+        },
+        {
+          "mode": "AboveValue",
+          "setpointA": 717.0,
+          "name": "OverVoltage",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Ext_Batt_Volt",
+      "historyEnabled": true,
+      "rawLow": 0.0,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10110"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "BelowValue",
+          "setpointA": 2.9,
+          "name": "Low_Cell_Volt",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Min_Cell_Volt",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10100"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Vendor_event_BitField_1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10084"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Cycle_Cnt",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10114"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "name": "Tot DC I"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Tot_DC_I",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10107"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "AboveValue",
+          "setpointA": 3.6,
+          "name": "Max Cell Volt",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_Cell_Volt",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10072"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100000.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Chrg_Cap",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10109"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_Cell_Volt_Mod",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10126"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "SOC_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10105"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "name": "Max Batt Volt",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_Batt_Volt",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10119"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "historyMaxAge": 1,
+      "scaledLow": 0.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Pwr_Req",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10078"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Mn_SOC",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10076"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100000.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Self_DisChrg_Rt",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10116"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "name": "Max DisChrg I",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Max_DisChrg_I",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10089"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Ctrl_Hrtbt",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10098"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int1Array",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Evnt_2_BitFld",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10112"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Min_Cell_Volt_Mod",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10086"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Chrg_Stat",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10071"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Base_Mod_Length",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HRI10096"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int1Array",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Batt_Evnt_1_BitFld",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10120"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Set_Operation",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10122"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "AHRTg_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10077"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "NamePlate_Mx_SOC",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10131"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "A_SF",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10092"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "State_Batt_Bank",
+      "historyEnabled": true,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10111"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Min_Cell_Volt_String",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "historyMaxAge": 1,
+      "dataType": "String",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Unique_ID",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10083"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "SOH",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10094"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Warranty_Date",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10079"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Mx_Reserve_Prect",
+      "historyEnabled": false,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10106"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "historyMaxAge": 1,
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "name": "Min Batt Volt",
+          "ackMode": "Auto"
+        }
+      ],
+      "tagType": "AtomicTag",
+      "scaledHigh": 100.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "HistorianDB",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Min_Batt_Volt",
+      "historyEnabled": true,
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[BAT{BAT_Number}]1.HR10118"
+      },
+      "valueSource": "opc",
+      "historyMaxAge": 1,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "historyMaxAgeUnits": "SEC",
+      "name": "Inverter_State_Req",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "sampleMode": "Periodic",
+      "historySampleRate": 1,
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

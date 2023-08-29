@@ -1,0 +1,589 @@
+{
+  "typeColor": -65536,
+  "name": "SMA",
+  "parameters": {
+    "Port_Number": {
+      "dataType": "Integer"
+    },
+    "SMA_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI823"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "1041 \u003d Leading 1042 \u003d Lagging",
+      "name": "Excitation_Type_of_cos_Leading_Lagging",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI207"
+      },
+      "valueSource": "opc",
+      "name": "Power_On_Error_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI233"
+      },
+      "valueSource": "opc",
+      "name": "Permanent_Active_Power_Limitation",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI217"
+      },
+      "valueSource": "opc",
+      "documentation": "51 \u003d Contactor closed 311 \u003d Contactor open",
+      "name": "Utility_Grid_Contactor",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64537"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Energy_Fed_In_On_The_Current_Day_kWh",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS190"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Current_L2",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI861"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Load_Power",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI257"
+      },
+      "valueSource": "opc",
+      "documentation": "51 \u003d Closed 311 \u003d Open",
+      "name": "State_Of_DC_Switch",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI235"
+      },
+      "valueSource": "opc",
+      "documentation": "1440 \u003d Grid operation 1441 \u003d Stand-alone mode",
+      "name": "Backup_Mode_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI231"
+      },
+      "valueSource": "opc",
+      "name": "Maximum_Possible_Permanent_Active_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRI779"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Active_Power_L2",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64513"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Total_AC_Energy",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRI775"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Active_Power_Total",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI237"
+      },
+      "valueSource": "opc",
+      "documentation": "1433 \u003d 277 volts 1434 \u003d 208 volts 1435 \u003d 240 volts 1436 \u003d 208 V without neutral conductor 1437 \u003d 240 V without neutral conductor",
+      "name": "Grid_Type",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS189"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Current_L1",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI227"
+      },
+      "valueSource": "opc",
+      "documentation": "381 \u003d Switched off 569 \u003d Switched on",
+      "name": "Status_Of_Key_Switch",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI547"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Operating_Time_Of_Interior_Fan_2",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI789"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L1_To_L2",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI863"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Current_PV_Array_Power",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI213"
+      },
+      "valueSource": "opc",
+      "name": "Status_Message",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64531"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Total_AC_Energy_kWh",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64525"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Feed_In_Time",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS194"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L2_To_L3",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI251"
+      },
+      "valueSource": "opc",
+      "documentation": "Status of current restart interlock: 257 \u003d Frequency not permitted 1690 \u003d Fast shut-down 2386 \u003d Overvoltage 2387 \u003d Undervoltage 2388 \u003d Overfrequency 2389 \u003d Underfrequency 2390 \u003d Passive islanding detection 2490 \u003d Phase lost detection3165 \u003d Phase locked loop error 3166 \u003d Phase lost detection on low-voltage side 3167 \u003d Active islanding detection",
+      "name": "Status_Of_Current_Restart_Interlock",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64521"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Operating_Time",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRI777"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Active_Power_L1",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS196"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L1_To_N",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI201"
+      },
+      "valueSource": "opc",
+      "documentation": "35 \u003d Error 303 \u003d Off 307 \u003d OK 455 \u003d Warning",
+      "name": "Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI211"
+      },
+      "valueSource": "opc",
+      "documentation": "336 \u003d Contact manufacturer 337 \u003d Contact installer 338 \u003d Invalid 887 - No recommended action",
+      "name": "Recommended_Action",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS197"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L2_To_N",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IR3"
+      },
+      "valueSource": "opc",
+      "name": "Number of the following modbus",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI199"
+      },
+      "valueSource": "opc",
+      "name": "Time_Until_Grid_Connection_Attempt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI803"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Freq",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS195"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L3_To_L1",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI205"
+      },
+      "valueSource": "opc",
+      "name": "Power_On_Warning_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI549"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Operating_Time_Of_Heat_Sink_Fan",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI249"
+      },
+      "valueSource": "opc",
+      "documentation": "51 \u003d Closed 311 \u003d Open",
+      "name": "Status_Of_The_GFDI_Relay",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI203"
+      },
+      "valueSource": "opc",
+      "name": "Power_On_Ok_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS199"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Voltage_L3_To_N",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI225"
+      },
+      "valueSource": "opc",
+      "name": "Insulation_Resistance_Ohm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI_64517"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Energy_Fed_In_On_The_Current_Day_Wh",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS191"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Current_L3",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRI781"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Active_Power_L3",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUS188"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Line_Current_Total",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI215"
+      },
+      "valueSource": "opc",
+      "name": "Status_Description",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI219"
+      },
+      "valueSource": "opc",
+      "documentation": "302 \u003d No derating 557 \u003d Temperature derating 884 \u003d Not active 1704 \u003d WMAX derating 1705 \u003d Frequency derating 1706 \u003d Derating due to PV current limitation.",
+      "name": "Temp_Derating",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMA{SMA_Number}]{Port_Number}.IRUI545"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "documentation": "",
+      "name": "Operating_Time_Of_Interior_Fan_1",
+      "Description": "",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

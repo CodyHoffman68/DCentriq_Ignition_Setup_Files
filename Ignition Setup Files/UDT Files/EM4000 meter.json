@@ -1,0 +1,271 @@
+{
+  "typeColor": -47289,
+  "name": "EM4",
+  "parameters": {
+    "Description": {
+      "dataType": "String"
+    },
+    "Modbus_ID": {
+      "dataType": "Integer"
+    },
+    "EM4_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF299"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Current Inst A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF301"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Current Inst B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF257"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Real Energy NET",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF275"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Real Power A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF261"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Total Inst Real Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF291"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage CA",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF279"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Real Power C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF295"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage BN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF267"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Total Power Factor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF273"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Current Avg",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF293"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage AN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF281"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "PF A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF287"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage AB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF277"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Real Power B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF269"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage LL Avg",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF265"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Total Inst App Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF289"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage BC",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF285"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "PF C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF263"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Total Inst React Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF283"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "PF B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF303"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Current Inst C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF297"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage CN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[EM4{EM4_Number}]{Modbus_ID}.HRF271"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Voltage LN Avg",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

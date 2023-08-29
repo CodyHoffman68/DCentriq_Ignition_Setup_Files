@@ -1,0 +1,929 @@
+{
+  "typeColor": -16711681,
+  "name": "ASC",
+  "Description": "Asco 185",
+  "parameters": {
+    "ASC_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR54"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Cuase",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR45"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Number",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR40.5"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Engine_Running",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR43.5"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Load_Shed_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.1"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Main_On_Emergency",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR25"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Normal_Voltage",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.11"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Voltage_Unbalance_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR44.5"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Manual_Transfer_To_Emerg_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR43.0"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Timer_Bypass_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.5"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Emergency_Source_Available",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR18"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "name": "Normal_Voltage_Phase_BC",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR55"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Number_Of_Entries_In_The_Control_Panel_Event_Log",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR14"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "name": "Emergency_Freq",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.4"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Normal_Source_Available",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.2"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Aux_On_Normal",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR49"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Day_Of_Week",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR42"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Controller_Status_State_Data",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR17"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "name": "Normal_Voltage_Phase_AB",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR44.4"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Local_Test_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.5"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Inphase_Monitor_For_Load_Shed_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR26.1"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Normal_Source_3_Phase_Sensing",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.3"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Bypass_DTTS_Source_Failure_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.4"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Inphase_Transfer_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR16.4"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Engine_Exerciser_With_Load_Active",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR58"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "CT_Ratio_Lookup_Table",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.8"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Remote_Transfer_Input_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR46"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Year",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR20"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Emergency_Voltage_Phase_CA",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR41"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Controller_State",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR59"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Phase_A_Current",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR57"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Current_Sensing",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR16.6"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "External_F17_Is_Active",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR43.2"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Remote_Transfer_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR40.4"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "External_Parameter_Lock_is_Active",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.7"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Transfer_Retransfer_Time_Delay_Bypass",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR60"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Phase_B_Current",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR13"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "name": "Nominal_Freq",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR47"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Month",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR56"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Tenths_Of_Second",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR53"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Type",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR52"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Second",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR50"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Hour",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.3"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Aux_On_Emergency",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.9"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Retransfer_To_Normal_Mode_Selector",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR15.0"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Main_On_Normal",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.1"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Emergency_To_Normal_Pretransfer_Time_Delay_Bypass_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR51"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Minute",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR66.0"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Current_Sensing_Module_Present",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR61"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Phase_C_Current",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR19"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "name": "Normal_Voltage_Phase_CA",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.6"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Fail_Accept_Timer_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.0"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Normal_To_Emergency_Pretransfer_Time_Delay_Bypass_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR20"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "name": "Normal_Voltage_Unbalance",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.2"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Commit_To_Transfer_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR26.0"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Normal_Freq",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR12"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "name": "Pha_Shift_Btw_Normal_and_Emergency",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR48"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Int4",
+      "engHigh": 100.0,
+      "name": "Event_Day_Of_Month",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR65.10"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Serial_Remote_Transfer_Enabled",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASC{ASC_Number}]1.HR43.7"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "engHigh": 100.0,
+      "name": "Trans_Inhibit_To_Emergency_Status",
+      "historyEnabled": false,
+      "engLimitMode": "No_Clamp",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

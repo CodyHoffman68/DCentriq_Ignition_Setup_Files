@@ -1,0 +1,144 @@
+{
+  "name": "MOX",
+  "Description": "MOXA E1214 AC Incomming Bad River",
+  "parameters": {
+    "MOX_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.5"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "HVAC2_PWR",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.0"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Neutral_Contactor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.4"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "HVAC1_PWR",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.2"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Relay2",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.1"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Relay1",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.2"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Fire",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.5"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "D15",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.3"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "DI3",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.0"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "K2",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.HR33.3"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Relay3",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.1"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Fire_Trouble",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[MOX{MOX_Number}]1.IR49.4"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "D14",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

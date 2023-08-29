@@ -1,0 +1,938 @@
+{
+  "typeColor": -2500352,
+  "name": "DCP",
+  "parameters": {
+    "DCP_Number": {
+      "dataType": "Integer"
+    },
+    "Port_Number": {
+      "dataType": "Integer"
+    },
+    "Modbus_Id": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.3"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,3)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Terminal_OV_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "Int1",
+      "name": "Manual_Mode",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.13"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,5)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Hardware_Vs_Error",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.7"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit3,2)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Bus_Soft_Start_Fault_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.4"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Terminal_UV_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR16"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "PV_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.6"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit3,1)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Bus_Relay_Open_Fault_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.2"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,5)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "PV_Sleep",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR19"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "PV_Volt_Internal",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "engHigh": 0.0,
+      "name": "Hardware_Current_Limit_Low",
+      "engLimitMode": "Clamp_Low",
+      "value": 0,
+      "engLow": -100.0,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.10"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,2)",
+      "dataType": "Int1",
+      "historyProvider": "LocalDb",
+      "name": "Alarm",
+      "historyEnabled": false,
+      "value": 0,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI88"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "engHigh": 30000.0,
+      "name": "PV_Sleep_Tm",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.9"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,3)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "CPLD_Vs_Error",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.0"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,1)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Bus_OV_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.2"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,0)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "15_Power_Error",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.14"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,5)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "RS485_Comm_Fail",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.9"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,2)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "On_Off",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "historyProvider": "LocalDb",
+      "name": "Unique_ID",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "name": "ctrl",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Power_On_Cmd\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\t\n\tif newvalue \u003d\u003d 1:\n\t\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\t\tUDT_Name \u003d \"[.]../DCP_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]\"\n\t\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\t\tpath5 \u003d \".HRUI2\"\n\t\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\t\n\t\n\t\tsystem.opc.writeValue(server,addr,newvalue)\n\t\n\t\n\tPath \u003d \"[.]Power_On_Cmd\"\n\tsystem.tag.write(Path,0)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "Power_On_Cmd",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Clear_Failure_Cmd\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\t\n\tif newvalue \u003d\u003d 1:\n\t\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\t\tUDT_Name \u003d \"[.]../DCP_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]\"\n\t\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\t\tpath5 \u003d \".HRUI6\"\n\t\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\t\n\t\n\t\tsystem.opc.writeValue(server,addr,newvalue)\n\t\n\tPath \u003d \"[.]Clear_Failure_Cmd\"\n\tsystem.tag.write(Path,0)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "Clear_Failure_Cmd",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PV_Max_Voltage_Setpoint\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI32\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value * 10\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "PV_Max_Voltage_Setpoint",
+          "value": 800,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Power_Off_Cmd\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\t\n\tif newvalue \u003d\u003d 1:\n\t\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\t\tUDT_Name \u003d \"[.]../DCP_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]\"\n\t\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\t\tpath5 \u003d \".HRUI4\"\n\t\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\t\n\t\n\t\tsystem.opc.writeValue(server,addr,newvalue)\n\t\t\n\tPath \u003d \"[.]Power_Off_Cmd\"\n\tsystem.tag.write(Path,0)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "Power_Off_Cmd",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]RS485_Timeout\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI90\"\n\taddr \u003d path1 + str(path2) + path3 +str(path4) + path5\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "RS485_Timeout",
+          "value": 30,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PV_Wake_Voltage_Setpoint\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI36\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value * 10\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "PV_Wake_Voltage_Setpoint",
+          "value": 400,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Auto_Power_On_Enable\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI88\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "Auto_Power_On_Enable",
+          "value": 1,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Save_Parameters_Cmd\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI8\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\t\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "Save_Parameters_Cmd",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PV_Sleep_Voltage_Setpoint\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI34\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value * 10\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "PV_Sleep_Voltage_Setpoint",
+          "value": 300,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PV_Sleep_Time\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI40\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\t\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "engHigh": 30000.0,
+          "name": "PV_Sleep_Time",
+          "engLimitMode": "Clamp_Both",
+          "value": 300,
+          "engLow": 1.0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]Wake_Up_Time\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI42\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "engHigh": 30000.0,
+          "name": "Wake_Up_Time",
+          "engLimitMode": "Clamp_Both",
+          "value": 60,
+          "engLow": 1.0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]I_Limit\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCP_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCP\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI38\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value * 10\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "I_Limit",
+          "value": 72,
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR24"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "Bus_Volt_Internal",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.2"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,2)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Mod_Curr_Abnormal_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR25"
+      },
+      "valueSource": "opc",
+      "rawHigh": -10000.0,
+      "scaleMode": "Linear",
+      "scaledLow": 151.0,
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "Temp_Approx",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "scaledHigh": 484.0,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR27"
+      },
+      "valueSource": "opc",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "DSP_Vs",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "value": "",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.13"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Fan_Failure",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "sourceTagPath": {
+        "bindType": "parameter",
+        "binding": "{DCP_Number}"
+      },
+      "value": {
+        "bindType": "parameter",
+        "binding": "{DCP_Number}"
+      },
+      "valueSource": "memory",
+      "name": "DCP_Num",
+      "tagType": "AtomicTag"
+    },
+    {
+      "value": {
+        "bindType": "parameter",
+        "binding": "{Modbus_Id}"
+      },
+      "valueSource": "memory",
+      "name": "Modbus_Id_Num",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.9"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit3,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Emergency_Power_Off",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "name": "Hardware_Current_Limit_High",
+      "engLimitMode": "Clamp_High",
+      "value": 0,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR17"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "PV_Volt_External",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR26"
+      },
+      "valueSource": "opc",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "CPLD_Vs",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.14"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Terminal_Relay_Open",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.1"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,0)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Discharging",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.5"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,5)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Terminal_Ov_I_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR18"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "PV_I",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.4"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit3,0)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "DC_Soft_Start_Fault_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI136"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Auto_Pwr_On_Enable",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.11"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Failure",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]0.HR138"
+      },
+      "valueSource": "memory",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "RS485_Timeout",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.6"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,6)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "No_Terminal_V_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.8"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,2)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "DSP_Vs_Error",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR123"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "Bus_Volt_External",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI80"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "PV_Max_Volt_SP",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.8"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit3,3)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "24V_Power_Error",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR26"
+      },
+      "valueSource": "opc",
+      "dataType": "Int2",
+      "historyProvider": "LocalDb",
+      "name": "DC_DC_Type",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI82"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "PV_Sleep_Volt_SP",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI90"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "engHigh": 30000.0,
+      "name": "Wake_Up_Tm",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.0"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,0)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Charging",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR5.1"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit2,1)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Bus_UV_Alarm",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI84"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "PV_Wake_Volt_SP",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "scaledHigh": 1000.0,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR4.8"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit1,1)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Parameter_Saving_Enabled_Disabled",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IRUI86"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "I_Lim",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.12"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Module_OT",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR7.3"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,1)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Bus_Relay_Short_Circuit",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCP{DCP_Number}]{Modbus_Id}.IR6.3"
+      },
+      "valueSource": "opc",
+      "expression": "Getbit([.]Breakout_Bit4,4)",
+      "dataType": "Boolean",
+      "historyProvider": "LocalDb",
+      "name": "Terminal_Relay_Short_Circuit",
+      "historyEnabled": false,
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

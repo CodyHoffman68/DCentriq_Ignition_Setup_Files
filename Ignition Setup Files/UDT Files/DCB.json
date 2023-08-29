@@ -1,0 +1,1642 @@
+{
+  "typeColor": -16776961,
+  "name": "DCB",
+  "Description": "DCDC",
+  "typeId": "",
+  "parameters": {
+    "DCB_Number": {
+      "dataType": "Integer"
+    },
+    "Port_Number": {
+      "dataType": "Integer"
+    },
+    "Modbus_Id": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI172"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_PID_SP_Target",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR19"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Batt_Volt_Int",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "Int1",
+      "name": "Manual_Mode",
+      "value": 0,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI154"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_I_Lim_Lw",
+      "historyEnabled": true,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI174"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "I_Cmd",
+      "historyEnabled": true,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "value": {
+        "bindType": "parameter",
+        "binding": "{Modbus_Id}"
+      },
+      "valueSource": "memory",
+      "name": "Modbus_Id_Num",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.9"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "CPLD_Version_Error",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.8"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "24V_Power_Error",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI138"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "RS_485_Tmout",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI102"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Bus_V_Band_HI",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.4"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Batt_UV_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI140"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_PID_Integral",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI146"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_PID_Err",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI188"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Filter",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.1"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Batt_Relay_Short_Circuit",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRI82"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "I_Lim_Lw",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.6"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Bus_Relay_Open_Fault_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI148"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_PID_Max_Integral",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.2"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "15_Power_Error",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "name": "Hardware_Current_Limit_High",
+      "engLimitMode": "Clamp_High",
+      "value": 0,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI106"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tpath \u003d \"[.]R_Auto_Band_Bus_V_Hi_Max\"\n\tvalue \u003d system.tag.readBlocking(path)\n\t\t\n\tpath1 \u003d \"[.]../Auto_Band_Bus_V_Hi_Max\"\n\t\n\t\n\t#newvalue \u003d ((value \u0026 0xff00) \u003e\u003e 16) | ((value \u0026 0xff) \u003c\u003c 16)\n\tnewvalue \u003d value / 16\n\tsystem.tag.writeBlocking(path1, newvalue)\n\t\n"
+        }
+      ],
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Auto_Band_Bus_V_Hi_Max",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI108"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Auto_Band_Bus_V_Lw_Min",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR27"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": false,
+      "dataType": "Int2",
+      "name": "DSP_Version",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR18"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Batt_I",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "valueSource": "memory",
+      "engHigh": 0.0,
+      "name": "Hardware_Current_Limit_Low",
+      "engLimitMode": "Clamp_Low",
+      "value": 0,
+      "engLow": -100.0,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.11"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Failure",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI116"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Feedback_Scalar",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI170"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_PID_Setpoint_Hys",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR24"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Float8",
+      "name": "Bus_volt_Int",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI152"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Act_I_Lim_Hi",
+      "historyEnabled": true,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI114"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Max_PID_Err",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI98"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E12,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Reg_Ramp_Rt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6103515.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.14"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "RS485_Comm_Fail",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI126"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "OP_Offset",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI120"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E12,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Feedback_Scalar",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6.1035156E7
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.6"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "No_Batt_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.7"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Bus_Soft_Start_Fault_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI144"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_PID_Actual_SP",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI176"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_Filtered",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI142"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_PID_SP_Ram_Cntr",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI182"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "EnSync_Algorithm_Enabled",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI124"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Ctrl_Mode",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR25"
+      },
+      "valueSource": "opc",
+      "rawHigh": -10000.0,
+      "scaleMode": "Linear",
+      "scaledLow": 151.0,
+      "readOnly": false,
+      "dataType": "Int2",
+      "name": "Temp_Approx",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 484.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.10"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI122"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Feedback_Offset",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR23"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Float8",
+      "name": "Bus_volt_Ext",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR17"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Batt_Volt_Ext",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI150"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Bus_V_PID_Min_Integral",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI186"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Float8",
+      "name": "Batt_V_Filtered",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "name": "ctrl",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVoltageFeedbackOffset\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI70\"\n\taddr \u003d path1 + str(path2) + path3\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVoltageFeedbackOffset",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]AutobandBusVHiMax\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI58\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\tnewvalue \u003d value*16\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)\n\n\n"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "AutoBandBusVHiMax",
+          "value": 770,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]SaveParametersCommand\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI8\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewValue \u003d value\n\tsystem.opc.writeValue(server,addr,newValue)\t\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "SaveParametersCommand",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVRegulatorPGain\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRI42\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVRegulatorPGain",
+          "value": -4,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BatteryVoltageLimitLow\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI38\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BatteryVoltageLimitLow",
+          "value": 624,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]CommsTimeout\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI90\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "CommsTimeout",
+          "value": 300,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]AutobandBusVRampRate\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI62\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "AutoBandBusVRampRate",
+          "value": 20,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "rawHigh": 100000.0,
+          "engHigh": 0.0,
+          "engLimitMode": "Clamp_Both",
+          "engLow": -100.0,
+          "tagType": "AtomicTag",
+          "scaledHigh": 6250.0,
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]CurrentLimitLow\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d \"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRI34\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewValue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newValue)\t\t"
+            }
+          ],
+          "scaleMode": "Off",
+          "dataType": "Int4",
+          "name": "CurrentLimitLow",
+          "value": -10
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PowerOffCommand\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tif newvalue \u003d\u003d 1:\n\t\tserver \u003d \"Ignition OPC UA Server\"\n\t\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\t\tUDT_Name \u003d \"[.]../DCB_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]\"\n\t\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\t\tpath5 \u003d \".HRUI4\"\n\t\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\tsystem.opc.writeValue(server,addr,newvalue)\t\t\n\t\n\tPath \u003d \"[.]PowerOffCommand\"\n\tsystem.tag.write(Path,0)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "PowerOffCommand",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVRegulatorRempRate\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI50\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVRegulatorRampRate",
+          "formatString": "#,##0.##",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVRegulatorIGain\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRI44\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVRegulatorIGain",
+          "value": -300,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BatteryVoltageFeedbackOffset\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI74\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BatteryVoltageFeedbackOffset",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]ClearFailureCommand\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI6\"\t\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)\n\tPath \u003d \"[.]ClearFailureCommand\"\n\tsystem.tag.write(Path,0)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "ClearFailureCommand",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]MaxPidError\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI55\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)\t\t"
+            }
+          ],
+          "rawHigh": 100000.0,
+          "scaleMode": "Off",
+          "dataType": "Int4",
+          "name": "MaxPidError",
+          "value": 10,
+          "tagType": "AtomicTag",
+          "scaledHigh": 6205.0
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]PowerOnCommand\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\t\n\tif newvalue \u003d\u003d 1:\n\t\tserver \u003d \"Ignition OPC UA Server\"\n\t\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\t\tUDT_Name \u003d \"[.]../DCB_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]\"\n\t\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\t\tpath5 \u003d \".HRUI2\"\n\t\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\tsystem.opc.writeValue(server,addr,newvalue)\t\t\n\t\n\tPath \u003d \"[.]PowerOnCommand\"\n\tsystem.tag.write(Path,0)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "PowerOnCommand",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]OutputOffset\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI78\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewValue \u003d value\n\tsystem.opc.writeValue(server,addr,newValue)\t\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "OutputOffset",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]AutobandBusVHysteresis\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI64\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "AutoBandBusVHysteresis",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BatteryVoltageFeedbackScalar\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI72\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "rawHigh": 1.0E12,
+          "scaleMode": "Off",
+          "dataType": "Int4",
+          "name": "BatteryVoltageFeedbackScalar",
+          "value": 16384,
+          "tagType": "AtomicTag",
+          "scaledHigh": 6103515.0
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]CurrentLimitHigh\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003dsystem.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRI32\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewValue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newValue)\t"
+            }
+          ],
+          "rawHigh": 100000.0,
+          "scaleMode": "Off",
+          "dataType": "Int4",
+          "engHigh": 100.0,
+          "name": "CurrentLimitHigh",
+          "engLimitMode": "Clamp_Both",
+          "value": 10,
+          "tagType": "AtomicTag",
+          "scaledHigh": 6250.0
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVRegulatorDecayGainErrEqZero\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI48\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVRegulatorDecayGainErrEqZero",
+          "value": 1,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]AutobandBusVLowMin\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI60\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "AutoBandBusVLowMin",
+          "value": 740,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]EnableEnSyncAlgorithmCommand\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI10\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tsystem.opc.writeValue(server,addr,newvalue)\t"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "EnableEnSyncAlgorithmCommand",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVBandHigh\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI54\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVBandHigh",
+          "value": 790,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVoltageFeedbackScalar\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI68\"\t\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVoltageFeedbackScalar",
+          "value": 16384,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]ControlMode\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI76\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "ControlMode",
+          "value": 0,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVBandLow\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI56\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVBandLow",
+          "value": 780,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BusVRegulatorDecayGainErrGtZero\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI46\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BusVRegulatorDecayGainErrGtZero",
+          "value": 1,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BatteryVoltageLimitHigh\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI36\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value*16\n\t#newvalue \u003d ((value \u0026 0xff00) \u003e\u003e 16) | ((value \u0026 0xff) \u003c\u003c 16)\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "dataType": "Int4",
+          "name": "BatteryVoltageLimitHigh",
+          "value": 717,
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "memory",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tPath \u003d \"[.]BatteryVoltageLimitCutoffSlope\"\n\tvalue \u003d system.tag.readBlocking([Path])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\tModbus_Id_Num \u003d \"[.]../Modbus_Id_Num\"\n\tUDT_Name \u003d \"[.]../DCB_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[DCB\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]\"\n\tpath4 \u003d system.tag.readBlocking([Modbus_Id_Num])[0].value\n\tpath5 \u003d \".HRUI40\"\n\taddr \u003d path1 + str(path2) + path3 + str(path4) + path5\n\t\n\tnewvalue \u003d value\n\tsystem.opc.writeValue(server,addr,newvalue)"
+            }
+          ],
+          "rawHigh": 1.0E9,
+          "scaleMode": "Off",
+          "dataType": "Int4",
+          "name": "BatteryVoltageLimitCutoffSlope",
+          "value": 100,
+          "tagType": "AtomicTag",
+          "scaledHigh": 6103515.0
+        }
+      ]
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI166"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Act_Bus_V_Lw_Band",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI112"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Auto_Band_Bus_V_Hyst",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "sourceTagPath": {
+        "bindType": "parameter",
+        "binding": "{DCB_Number}"
+      },
+      "value": {
+        "bindType": "parameter",
+        "binding": "{DCB_Number}"
+      },
+      "valueSource": "memory",
+      "dataType": "Int4",
+      "name": "DCB_Num",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI164"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Act_Bus_V_Hi_Band",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.3"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Batt_OV_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.8"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "DSP_Version_Error",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI84"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Lim_HI",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.0"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Bus_OV_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI178"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Filter",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRI80"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "I_Lim_HI",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.9"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "On_Off",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR28"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": false,
+      "dataType": "Int2",
+      "name": "DC_to_DC_Type",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI104"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Bus_V_Band_Lw",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.3"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Bus_Relay_Short_Circuit",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI88"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E12,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Lim_Cutoff_Slope",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6.1035156E7
+    },
+    {
+      "valueSource": "memory",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI170"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_SP_Hyst",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.2"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Mod_I_Abnormal_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR16"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": false,
+      "dataType": "Int2",
+      "name": "Batt_Pwr",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI184"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "I_Ctrl_Act",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI110"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Auto_Band_Bus_V_Ramp_Rt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI96"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E10,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Reg_Decay_Gain_Equ0",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 9.313226
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR26"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": false,
+      "dataType": "Int2",
+      "name": "CPLD_Version",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 10000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.13"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Fan_Failure",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.9"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Emergency_Power_Off",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR7.13"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Hardware_Version_Error",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "name": "Watchdog",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "valueSource": "reference",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tWritePath \u003d \"[.]../ctrl/CurrentLimitLow\"\n\tWriteValue \u003d system.tag.readBlocking([WritePath])[0].value\n\tReadPath \u003d \"[.]../I_Lim_Lw\"\n\tReadValue \u003d system.tag.readBlocking([ReadPath])[0].value\n\n\n\tzero \u003d 0\n\tif ReadValue !\u003d WriteValue:\n\t\tif WriteValue \u003c 0:\n\t\t\tWriteValue \u003d WriteValue + 1\n\t\t\tsystem.tag.write(WritePath,WriteValue)\n\t\telse:\n\t\t\tWriteValue \u003d WriteValue - 1\n\t\t\tsystem.tag.write(WritePath,WriteValue)"
+            }
+          ],
+          "sourceTagPath": "[~]Seconds_5",
+          "name": "CurrentLimitLow",
+          "tagType": "AtomicTag"
+        },
+        {
+          "valueSource": "reference",
+          "eventScripts": [
+            {
+              "eventid": "valueChanged",
+              "script": "\tWritePath \u003d \"[.]../ctrl/CurrentLimitHigh\"\n\tWriteValue \u003d system.tag.readBlocking([WritePath])[0].value\n\tReadPath \u003d \"[.]../I_Lim_HI\"\n\tReadValue \u003d system.tag.readBlocking([ReadPath])[0].value\n\n\n\tzero \u003d 0\n\tif ReadValue !\u003d WriteValue:\n\t\tif WriteValue \u003e zero:\n\t\t\tWriteValue \u003d WriteValue - 1\n\t\t\tsystem.tag.write(WritePath,WriteValue)\n\t\telse:\n\t\t\tWriteValue \u003d WriteValue + 1\n\t\t\tsystem.tag.write(WritePath,WriteValue)"
+            }
+          ],
+          "sourceTagPath": "[~]Seconds_5",
+          "name": "CurrentLimitHigh",
+          "tagType": "AtomicTag"
+        }
+      ]
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.1"
+      },
+      "valueSource": "opc",
+      "name": "Bus_UV_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRI92"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Off",
+      "readOnly": false,
+      "dataType": "Int4",
+      "name": "Bus_V_Reg_I_Gain",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI118"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E12,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Feedback_Offset",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6.1035156E7
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI86"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Batt_V_Lim_Lw",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6250.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.8"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Parameter_Saving_Enable_Disable",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.0"
+      },
+      "valueSource": "opc",
+      "name": "Charging",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.12"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Module_OT",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRI90"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E12,
+      "scaleMode": "Off",
+      "readOnly": false,
+      "dataType": "Int4",
+      "name": "Bus_V_Reg_P_Gain",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 6.1035156E7
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.14"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Batt_Relay_Open",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IRUI94"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E10,
+      "scaleMode": "Off",
+      "readOnly": true,
+      "dataType": "Int4",
+      "name": "Bus_V_Reg_Decay_Gain_Grt0",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 9.313226
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR6.4"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "DC_Soft_Start_Fault_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR4.1"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Discharging",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DCB{DCB_Number}]{Modbus_Id}.IR5.5"
+      },
+      "valueSource": "opc",
+      "dataType": "Int1",
+      "name": "Batt_Over_I_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

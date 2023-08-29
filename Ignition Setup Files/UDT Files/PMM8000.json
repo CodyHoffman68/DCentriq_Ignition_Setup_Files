@@ -1,0 +1,399 @@
+{
+  "typeColor": -29696,
+  "name": "PMM",
+  "Description": "PM8244 Meter",
+  "parameters": {
+    "PMM_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3022"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_BtoC",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3148"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Pwr_Fact_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF2700"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Energy_Deliv_Into_Load",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3076"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Aprnt_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3054"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Pwr_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3030"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_BtoN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3024"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_CtoA",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3056"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Pwr_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3068"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "React_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3002"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "I_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3000"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "I_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3026"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_LtoL_Avg",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF2702"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Energy_Deliv_Out_of_Ld",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3066"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "React_Pwr_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3144"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Pwr_Fact_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3072"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Aprnt_Pwr_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3074"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Aprnt_Pwr_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3058"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Pwr_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3032"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_CtoN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3060"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3110"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Freq",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3010"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "I_AVG",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3064"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "React_Pwr_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3004"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "I_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3150"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Pwr_Fact_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF2706"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Energy_Deliv_Not_Rec",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3006"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "I_N",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3020"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_AtoB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3146"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Pwr_Fact_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3036"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_LtoN_Avg",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3070"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Aprnt_Pwr_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3062"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "React_Pwr_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF3028"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Volt_AtoN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[PMM{PMM_Number}]1.HRF2704"
+      },
+      "valueSource": "opc",
+      "dataType": "Float4",
+      "name": "Act_Energy_Deliv_Rec",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "typeColor": -12058625,
+  "name": "ASM",
+  "Description": "ASCO_Power_Meter",
+  "parameters": {
+    "ASM_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR16"
+      },
+      "valueSource": "opc",
+      "name": "BC_Volt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR48"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "name": "Freq_on_Phase_Va",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR35"
+      },
+      "valueSource": "opc",
+      "name": "Reactive_Power_Phase_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR36"
+      },
+      "valueSource": "opc",
+      "name": "Reactive_Power_Phase_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR20"
+      },
+      "valueSource": "opc",
+      "name": "Line_to_N_Voltage_Unbalance",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR42"
+      },
+      "valueSource": "opc",
+      "name": "Power_Factor_Total",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR45"
+      },
+      "valueSource": "opc",
+      "name": "Volt_Amp_Power_Phase_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR24"
+      },
+      "valueSource": "opc",
+      "name": "Average_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR38"
+      },
+      "valueSource": "opc",
+      "name": "Reactive_Power_Total",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR22"
+      },
+      "valueSource": "opc",
+      "name": "B_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR46"
+      },
+      "valueSource": "opc",
+      "name": "Volt_Amp_Power_Total",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR18"
+      },
+      "valueSource": "opc",
+      "name": "Line_to_Line_Average",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR12"
+      },
+      "valueSource": "opc",
+      "name": "B_to_N",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR39"
+      },
+      "valueSource": "opc",
+      "name": "Power_Factor_Phase_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR23"
+      },
+      "valueSource": "opc",
+      "name": "C_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR17"
+      },
+      "valueSource": "opc",
+      "name": "CA_Volt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR44"
+      },
+      "valueSource": "opc",
+      "name": "Volt_Amp_Power_Phase_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR37"
+      },
+      "valueSource": "opc",
+      "name": "Reactive_Power_Phase_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR25"
+      },
+      "valueSource": "opc",
+      "name": "Current_Unbalance",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR41"
+      },
+      "valueSource": "opc",
+      "name": "Power_Factor_Phase_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR33"
+      },
+      "valueSource": "opc",
+      "name": "Active_Power_Phase_C",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR43"
+      },
+      "valueSource": "opc",
+      "name": "Volt_Amp_Power_Phase_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR34"
+      },
+      "valueSource": "opc",
+      "name": "Total_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR13"
+      },
+      "valueSource": "opc",
+      "name": "C_to_N",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR31"
+      },
+      "valueSource": "opc",
+      "name": "Active_Power_Phase_A",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR11"
+      },
+      "valueSource": "opc",
+      "name": "A_to_N",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR21"
+      },
+      "valueSource": "opc",
+      "name": "A_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR40"
+      },
+      "valueSource": "opc",
+      "name": "Power_Factor_Phase_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR26"
+      },
+      "valueSource": "opc",
+      "name": "CT4_or_N_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR15"
+      },
+      "valueSource": "opc",
+      "name": "AB_Volt",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR14"
+      },
+      "valueSource": "opc",
+      "name": "Line_to_N_Average",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR19"
+      },
+      "valueSource": "opc",
+      "name": "Line_to_Line_Voltage_Unbalance",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[ASM{ASM_Number}]2.HR32"
+      },
+      "valueSource": "opc",
+      "name": "Active_Power_Phase_B",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

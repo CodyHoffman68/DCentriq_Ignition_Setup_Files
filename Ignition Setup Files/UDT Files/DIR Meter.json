@@ -1,0 +1,1564 @@
+{
+  "typeColor": -29696,
+  "name": "DIR",
+  "Description": "   Dirus Meter ",
+  "parameters": {
+    "DIR_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18515"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18463"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Current_L3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18617"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18509"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q2_Lead",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18475"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Snom",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18587"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "I_L1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18493"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18443"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Freq",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18451"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_Vn",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18487"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Pwr_Fctr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR11251.2"
+      },
+      "valueSource": "opc",
+      "name": "ATS_Status2",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18649"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18647"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18485"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_App_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18457"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U31",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18474"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Inb",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18607"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_React_Pwr_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18585"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U31_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18505"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q3_Lag",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18488"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Pwr_Fctr_Type",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18561"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Load_Stat_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18513"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18524"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_sPF3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18497"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18652"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_SPF3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18648"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18567"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Sys_Ph_Ph_Volt_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18605"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Act_Pwr_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18609"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Lag_React_Pwr_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18447"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_V2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18645"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18434"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "name": "Integration_Tm",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18517"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18581"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U12_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18627"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18511"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q3_Lead",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18613"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_App_Pwr_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18470"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Linv",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18629"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q1_Lag_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI19849"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Pos_React_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS19852"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Neg_React_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18595"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Inba_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR19843"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Pos_Act_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18483"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Lead_React_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18589"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "I_L2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18463"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Current_Ln",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18468"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Idir",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18519"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18434"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "name": "Date_of_last_instance",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18575"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_V2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18596"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Idir_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18623"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18503"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q2_Lag",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18507"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q1_Lead",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18603"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Snom_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18569"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Sys_I_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18625"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18489"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18591"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "I_L3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18631"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q2_Lag_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18459"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Current_L1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18501"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q1_Lag",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18611"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Lead_React_Pwr_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18445"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_V1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18441"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Sys_I",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS19884"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Partial_Apparent_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18598"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Linv_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI19875"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Partial_Neg_Act_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS19881"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Partial_Neg_React_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18565"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Sys_Ph_N_Volt_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18495"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18641"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18481"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Lag_React_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18635"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q1_Lead_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR19878"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Partial_Pos_React_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18477"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E11,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Act_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18600"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ihom_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18650"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_SPF1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18455"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U23",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18453"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U12",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18577"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_V3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS19846"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Neg_Act_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18633"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lag_React_Pwr_Q3_Lag_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS19855"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_appar_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18602"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Inb_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18615"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Tot_Pwr_Fct_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18520"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18579"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_Vn_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18619"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18437"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "historyProvider": "LocalDb",
+      "name": "Sys_Ph_N_Volt",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18621"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P3_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18433"
+      },
+      "valueSource": "opc",
+      "historyProvider": "LocalDb",
+      "name": "Load_Status",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18523"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_sPF2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18564"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Integration_Tm_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18573"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_N_Volt_V1_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18571"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Freq_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18491"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Act_Pwr_P2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18522"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_sPF1",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI19872"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Partial_Pos_Act_Energy",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18439"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Syst_ph_Ph_Volt",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18449"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "alarms": [
+        {
+          "mode": "OnCondition",
+          "activeCondition": true,
+          "name": "Ph N Volt V3"
+        }
+      ],
+      "name": "Ph_N_Volt_V3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18479"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Off",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Tot_React_Pwr",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR11251.1"
+      },
+      "valueSource": "opc",
+      "name": "ATS_Status1",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18593"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "I_Ln_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "historyProvider": "LocalDb",
+      "name": "Unique_ID",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18472"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ihom",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18643"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "App_Pwr_S2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18637"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q2_Lead_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18639"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Lead_React_Pwr_Q3_Lead_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18583"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Ph_Ph_Volt_U23_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18651"
+      },
+      "valueSource": "opc",
+      "dataType": "Int4",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_Type_SPF2_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUI18461"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Current_L2",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HR18519"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Pwr_Fct_PF3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRUS18562"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "Date_Last_Instance_Avg",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[DIR{DIR_Number}]5.HRI18499"
+      },
+      "valueSource": "opc",
+      "dataType": "Float8",
+      "historyProvider": "LocalDb",
+      "name": "React_Pwr_Q3",
+      "historyEnabled": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

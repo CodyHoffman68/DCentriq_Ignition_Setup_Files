@@ -1,0 +1,669 @@
+{
+  "typeColor": -16776961,
+  "name": "CHP",
+  "Description": "CHP Dallmann",
+  "parameters": {
+    "CHP_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR8"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_C_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR34"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Gas_Cumulative_of_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR19"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Real_Power_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR39"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Energyproduced_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR35"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Realpower_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR29"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Heat_Rate_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR22"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Reactive_Power_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR30"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Heat_Rate_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR11"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_A_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR1"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_Avg_Lsw",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR33"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Gas_Cumulative_of_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR23"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Temp_Supply_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR12"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_A_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR37"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Apparentpower_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR42"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "dataType": "Boolean",
+      "name": "Cogen_Alarm",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR15"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_C_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR20"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Real_Power_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR4"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_A_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR26"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Temp_Return_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR10"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_Avg_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR38"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Apparentpower_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "historyProvider": "LocalDb",
+      "name": "Unique_ID",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR21"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Reactive_Power_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR35"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Realpower_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR25"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Temp_Return_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR32"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Heat_Total_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR40"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Energyproduced_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR17"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Frequency_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR3"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_A_Lsw",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "value": {
+        "bindType": "parameter",
+        "binding": "{CHP_Number}"
+      },
+      "valueSource": "memory",
+      "name": "CHP_Num",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR27"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Flow_GPM_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR2"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_Avg_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR16"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_C_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "historyEnabled": false,
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR9"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_Avg_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR31"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Heat_Total_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR6"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_B_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR13"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_B_LSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR14"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Current_B_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR5"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_B_Lsw",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR7"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Voltage_C_Lsw",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR18"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Frequency_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR28"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Flow_GPM_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR24"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Loop_Temp_Supply_MSW",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[CHP{CHP_Number}]1.HR41"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "tagType": "AtomicTag",
+      "scaledHigh": 10000.0,
+      "scaleMode": "Off",
+      "historyProvider": "LocalDb",
+      "name": "Cogen_Mode",
+      "historyEnabled": false,
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}

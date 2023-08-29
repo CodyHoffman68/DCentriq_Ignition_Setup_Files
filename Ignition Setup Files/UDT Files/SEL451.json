@@ -1,0 +1,1123 @@
+{
+  "typeColor": -16711681,
+  "name": "SEL",
+  "Description": "SEL451",
+  "parameters": {
+    "SEL_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9236"
+      },
+      "valueSource": "opc",
+      "name": "Volt_NVS1_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9250"
+      },
+      "valueSource": "opc",
+      "name": "Pwr_Fact_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9231"
+      },
+      "valueSource": "opc",
+      "name": "Volt_B_Pha_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR9269"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_Real_Pwr_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9269"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "I2_I1",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR4.0"
+      },
+      "valueSource": "memory",
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tPath \u003d \"[.]Req_Open_Brkr_DGCB\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\tserver \u003d \"Ignition OPC UA Server\"\n\taddr \u003d \"ns\u003d1;s\u003d[SEL1]1.C4\"\n\tsystem.opc.writeValue(server,addr,newvalue)\t\n#\taddr2 \u003d \"ns\u003d1;s\u003d[SEL1]1.C3\"\n#\tOff \u003d 0\n#\tsystem.opc.writeValue(server,addr2,Off)\n\t\n#\tPath \u003d \"[.]Req_Open_Brkr_DGCB\"\n#\tsystem.tag.write(Path,0)"
+        }
+      ],
+      "dataType": "Int4",
+      "name": "Req_Open_Brkr_DGCB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9263"
+      },
+      "valueSource": "opc",
+      "name": "Demand_Real_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9270"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_Real_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9260"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Off",
+      "name": "Demand_Real_Pwr_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.14"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Software_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9278"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Zero_Seq_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9222"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_C_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9262"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Off",
+      "name": "Demand_Real_Pwr_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9275"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Neg_Seq_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9246"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Apparent_Pwr_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9223"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_A_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9277"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Zero_Seq_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9219"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_B_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9244"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "React_Pwr_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl8"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit4",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9271"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Zero_Seq_V_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9272"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Zero_Seq_V_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9253"
+      },
+      "valueSource": "opc",
+      "name": "Pwr_Fact_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9274"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Neg_Seq_V_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9266"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_I_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9259"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "name": "Demand_Neg_Seq_I",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9240"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "name": "Real_Pwr_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9261"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Off",
+      "name": "Demand_Real_Pwr_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9252"
+      },
+      "valueSource": "opc",
+      "name": "Pwr_Fact_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.13"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Breaker_DGCB_Closed",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl6"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit2",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9245"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "React_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9251"
+      },
+      "valueSource": "opc",
+      "name": "Pwr_Fact_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9234"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "Volt_C_Pha_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9224"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_A_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.11"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "In_Sync",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9254"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "Freq",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.2"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "in101",
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9239"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "name": "Real_Pwr_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9228"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_C_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9237"
+      },
+      "valueSource": "opc",
+      "name": "Volt_NVS2_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9218"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_A_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR9267"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_Real_Pwr_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9255"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Demand_Pha_I_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.10"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Utility_Available",
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9235"
+      },
+      "valueSource": "opc",
+      "name": "Volt_VP_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9229"
+      },
+      "valueSource": "opc",
+      "name": "Volt_A_Pha_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9220"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_B_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9238"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000000.0,
+      "scaleMode": "Linear",
+      "name": "Real_Pwr_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl10"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit6",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9230"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "Volt_A_Pha_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR9256"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Demand_Pha_I_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9276"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Neg_Seq_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9225"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_B_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl7"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit3",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.8"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Breaker_MCB_Open",
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9242"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "React_Pwr_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9264"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_I_A_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl5"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit1",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR3.0"
+      },
+      "valueSource": "memory",
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tPath \u003d \"[.]Req_Close_Brkr_DGCB\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\tserver \u003d \"Ignition OPC UA Server\"\n\taddr \u003d \"ns\u003d1;s\u003d[SEL1]1.C3\"\n\tsystem.opc.writeValue(server,addr,newvalue)\n#\taddr2 \u003d \"ns\u003d1;s\u003d[SEL1]1.C4\"\n#\tOff \u003d 0\n\t#system.opc.writeValue(server,addr2,Off)\n\t\n#\tPath \u003d \"[.]Req_Close_Brkr_DGCB\"\n#\tsystem.tag.write(Path,0)"
+        }
+      ],
+      "dataType": "Int4",
+      "name": "Req_Close_Brkr_DGCB",
+      "value": 0,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9268"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Pos_Seq_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9247"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Apparent_Pwr_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR9257"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Demand_Pha_I_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR1.0"
+      },
+      "valueSource": "memory",
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tPath \u003d \"[.]Req_Close_Brkr_MCB\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\tserver \u003d \"Ignition OPC UA Server\"\n\taddr \u003d \"ns\u003d1;s\u003d[SEL1]1.C1\"\n\tsystem.opc.writeValue(server,addr,newvalue)\t\n#\taddr2 \u003d \"ns\u003d1;s\u003d[SEL1]1.C1\"\n#\tOff \u003d 0\n#\tsystem.opc.writeValue(server,addr2,Off)\n\t\n\t\n#\tPath \u003d \"[.]Req_Close_Brkr_MCB\"\n#\tsystem.tag.write(Path,0)"
+        }
+      ],
+      "dataType": "Int4",
+      "name": "Req_Close_Brkr_MCB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9248"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Apparent_Pwr_C_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9233"
+      },
+      "valueSource": "opc",
+      "name": "Volt_C_Pha_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.9"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Breaker_MCB_Closed",
+      "tagGroup": "50ms",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR9268"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_Real_Pwr_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.1"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Trip_LED",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9243"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "React_Pwr_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.HR2.0"
+      },
+      "valueSource": "memory",
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tPath \u003d \"[.]Req_Open_Brkr_MCB\"\n\tnewvalue \u003d system.tag.readBlocking([Path])[0].value\n\tserver \u003d \"Ignition OPC UA Server\"\n\taddr \u003d \"ns\u003d1;s\u003d[SEL1]1.C2\"\n\tsystem.opc.writeValue(server,addr,newvalue)\t\n#\taddr2 \u003d \"ns\u003d1;s\u003d[SEL1]1.C1\"\n#\tOff \u003d 0\n#\tsystem.opc.writeValue(server,addr2,Off)\n\t\n#\tPath \u003d \"[.]Req_Open_Brkr_MCB\"\n#\tsystem.tag.write(Path,0)"
+        }
+      ],
+      "dataType": "Int4",
+      "name": "Req_Open_Brkr_MCB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9227"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_C_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.0"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Relay_Disabled",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9265"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Peak_Demand_I_B_Pha",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9258"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Demand_Zero_Seq_I",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9221"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_C_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9256"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Pos_Inst_Imp_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9232"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "Volt_B_Pha_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9249"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Apparent_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.15"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Hardware_Alarm",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR1.12"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Breaker_DGCB_Open",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9267"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Pos_Seq_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 100.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9217"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "BKR1_A_Pha_I_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IRUS9273"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E8,
+      "scaleMode": "Linear",
+      "name": "Neg_Seq_V_Mag",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.Cl9"
+      },
+      "valueSource": "opc",
+      "dataType": "Boolean",
+      "name": "Remote_Bit5",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9241"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Real_Pwr_Tot",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9257"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1.0E7,
+      "scaleMode": "Linear",
+      "name": "Pos_Inst_Imp_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000000.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SEL{SEL_Number}]1.IR9226"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100000.0,
+      "scaleMode": "Linear",
+      "name": "BKR2_B_Pha_I_Ang",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1000.0
+    }
+  ]
+}

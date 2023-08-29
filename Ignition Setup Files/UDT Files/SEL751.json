@@ -1,0 +1,717 @@
+{
+  "typeColor": -256,
+  "name": "SE7",
+  "Description": "SEL751 Relay",
+  "parameters": {
+    "SE7_Number": {
+      "dataType": "Integer"
+    },
+    "Port_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR326"
+      },
+      "valueSource": "opc",
+      "name": "N_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR362"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "A_Apparent_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR367"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "B_Power_Factor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR8192.1"
+      },
+      "valueSource": "memory",
+      "rawHigh": 1000.0,
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tValuePath \u003d \"[.]Ctrl_Break_Open\"\n\tValue \u003d system.tag.readBlocking([ValuePath])[0].value\n\t\n\tif Value \u003d\u003d 1:\n\t\n\t\tserver \u003d \"Ignition OPC UA Server\"\n\t\n\t\tUDT_Name \u003d \"[.]SE7_Num\"\n\t\tpath1 \u003d\"ns\u003d1;s\u003d[SE7\"\n\t\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\t\tpath3 \u003d\"]1.HR8193\"\n\t\taddr \u003d path1 + str(path2) + path3\n\t\t\n\t\tnewvalue \u003d 2\n\t\tsystem.opc.writeValue(server,addr,newvalue)\n\t\n\t\tPath \u003d \"[.]Ctrl_Break_Close\"\n\t\tsystem.tag.write(Path,0)\t\t"
+        }
+      ],
+      "scaleMode": "Off",
+      "dataType": "Boolean",
+      "name": "Ctrl_Break_Open",
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR369"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "C_Reactive_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR330"
+      },
+      "valueSource": "opc",
+      "name": "L_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR350"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "VG",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR332"
+      },
+      "valueSource": "opc",
+      "name": "Average_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR345"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "scaleMode": "Linear",
+      "name": "VAN_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI553"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VAB",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI563"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VCN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR322"
+      },
+      "valueSource": "opc",
+      "name": "B_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR352"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "Average_Phase",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR347"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "scaleMode": "Linear",
+      "name": "VBN_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR336"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "VAB_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "dataType": "String",
+      "name": "Group",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR1811.4"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "dataType": "Boolean",
+      "name": "Utility_Availible",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR354"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "Voltage_Imbal",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR368"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "C_Real_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR349"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "scaleMode": "Linear",
+      "name": "VCN_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR371"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "C_Power_Factor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI557"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VBC",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR360"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "A_Real_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI559"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VBN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR8192"
+      },
+      "valueSource": "memory",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "dataType": "Int4",
+      "name": "Total_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI561"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VCA",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR328"
+      },
+      "valueSource": "opc",
+      "name": "G_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR357"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "scaleMode": "Off",
+      "name": "VDC",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR338"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "VBC_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR372"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Real_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HRI555"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "VAN",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR364"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "B_Real_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR8192"
+      },
+      "valueSource": "memory",
+      "rawHigh": 1000.0,
+      "eventScripts": [
+        {
+          "eventid": "valueChanged",
+          "script": "\tValuePath \u003d \"[.]Ctrl_Break_Close\"\n\tValue \u003d system.tag.readBlocking([ValuePath])[0].value\n\t\n\tRefPath \u003d \"[.]Breaker_Status\"\n\tRefValue \u003d system.tag.readBlocking([RefPath])[0].value\n\t\n\tserver \u003d \"Ignition OPC UA Server\"\n\n\tUDT_Name \u003d \"[.]SE7_Num\"\n\tpath1 \u003d\"ns\u003d1;s\u003d[SE7\"\n\tpath2 \u003d system.tag.readBlocking([UDT_Name])[0].value\n\tpath3 \u003d\"]1.HR8193\"\n\taddr \u003d path1 + str(path2) + path3\n\n\tif Value \u003d\u003d 1:\n\n\t\t\n\t\tnewvalue \u003d 1\n\t\tsystem.opc.writeValue(server,addr,newvalue)\n\t\t\n#\t#while loop to constantly send a 1 over unitl the breaker is closed\t\n#\t\twhile Value !\u003d RefValue:\t\n#\t\t\tRefValue \u003d system.tag.readBlocking([RefPath])[0].value\n#\t\t\tValue \u003d system.tag.readBlocking([ValuePath])[0].value\n#\t\t\tsystem.opc.writeValue(server,addr,newvalue)\n#\t\t\t#needed to add this If statement because for some reason when the while loop should have been satisfied it didn\u0027t break the loop\n#\t\t\tExicution_Num \u003d \"[~]Exicution_Num\"\t\n#\t\t\ttagvalue \u003d system.tag.readBlocking([Exicution_Num])[0].value\n#\t\t\ttagvalue \u003d tagvalue + 1\n#\t\t\tsystem.tag.write(Exicution_Num,tagvalue)\t\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t#\tif Value \u003d\u003d ReValue:\n\t\t#\t\tbreak\n\t\t#\tif Value \u003d\u003d 0:\n\t\t#\t\tbreak\n\tsystem.tag.write(ValuePath,0)\t"
+        }
+      ],
+      "scaleMode": "Off",
+      "dataType": "Boolean",
+      "name": "Ctrl_Break_Close",
+      "value": false,
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR340"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "VCA_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR365"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "B_Reactive_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR361"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "A_Reactive_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR377"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Sync_Freq",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR334"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "Current_Imbal",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR370"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "C_Apparent_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR374"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Apparent_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR320"
+      },
+      "valueSource": "opc",
+      "name": "A_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR373"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Reactive_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR367"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "B_Apparent_Power",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR324"
+      },
+      "valueSource": "opc",
+      "name": "C_Current",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR1762.0"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "dataType": "Boolean",
+      "name": "Breaker_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR313"
+      },
+      "valueSource": "opc",
+      "name": "Relay_Status",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR325"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "C_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR329"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "G_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR363"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "A_Power_Factor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR341"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "Average_Line",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR331"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "L_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "value": {
+        "bindType": "parameter",
+        "binding": "{SE7_Number}"
+      },
+      "valueSource": "memory",
+      "name": "SE7_Num",
+      "tagType": "AtomicTag"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR440"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Linear",
+      "name": "VS_RMS",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR323"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "B_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR351"
+      },
+      "valueSource": "opc",
+      "rawHigh": 100.0,
+      "scaleMode": "Linear",
+      "name": "VG_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR376"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Freq",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR375"
+      },
+      "valueSource": "opc",
+      "rawHigh": 1000.0,
+      "scaleMode": "Off",
+      "name": "Power_Factor",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR321"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "A_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SE7{SE7_Number}]{Port_Number}.HR327"
+      },
+      "valueSource": "opc",
+      "scaleMode": "Linear",
+      "name": "N_Angle",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "valueSource": "memory",
+      "name": "Unique_ID",
+      "tagType": "AtomicTag"
+    }
+  ]
+}

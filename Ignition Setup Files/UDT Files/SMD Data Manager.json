@@ -1,0 +1,59 @@
+{
+  "typeColor": -65536,
+  "name": "SMD",
+  "SMA Data Manager": "",
+  "parameters": {
+    "SMD_Number": {
+      "dataType": "Integer"
+    },
+    "Port_Number": {
+      "dataType": "Integer"
+    }
+  },
+  "tagType": "UdtType",
+  "tags": [
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMD{SMD_Number}]{Port_Number}.HR40016"
+      },
+      "valueSource": "opc",
+      "name": "Active_Power_Setpoint",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMD{SMD_Number}]{Port_Number}.HRUI41168"
+      },
+      "valueSource": "opc",
+      "name": "Active_Power_Limit_For_Entire_System",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMD{SMD_Number}]{Port_Number}.HR40494"
+      },
+      "valueSource": "opc",
+      "rawHigh": 10000.0,
+      "scaleMode": "Linear",
+      "name": "Direct_Marketer",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server",
+      "scaledHigh": 1.0
+    },
+    {
+      "opcItemPath": {
+        "bindType": "parameter",
+        "binding": "ns\u003d1;s\u003d[SMD{SMD_Number}]{Port_Number}.HRI40019"
+      },
+      "valueSource": "opc",
+      "name": "Quick_Shutdown",
+      "tagType": "AtomicTag",
+      "opcServer": "Ignition OPC UA Server"
+    }
+  ]
+}
